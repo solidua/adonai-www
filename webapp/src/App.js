@@ -15,9 +15,10 @@ var app = firebase.initializeApp({
 
 var scroll     = Scroll.animateScroll;
 
-firebase.database().ref('campers/').push({
-  foo: 'bar'
-})
+var name  = ''
+var phone = ''
+var email = ''
+
 
 const Menu = () => (
   <div className="menu-container animated fadeIn">
@@ -55,9 +56,19 @@ const Donate = () => (
 
 
 const handleSubmit = (event) => {
+
+  firebase.database().ref('campers/').push({
+    name: document.getElementById("fullname").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value
+  })
+
+  document.getElementById("fullname").value = ''
+  document.getElementById("phone").value = ''
+  document.getElementById("email").value = ''
   event.preventDefault()
-  console.log('hello')
 }
+
 
 const Registration = () => {
   return (
@@ -68,21 +79,19 @@ const Registration = () => {
           <label>
             Full Name
           </label>
-          <input type="text" name="fullname" placeholder="First and last name"/>
+          <input id="fullname" type="text" name="fullname" placeholder="First and last name" required/>
         </div>
-
         <div className="input-container">
           <label>
             Phone
           </label>
-          <input type="text" name="phone" placeholder="###-###-###"/>
+          <input id="phone" type="text" name="phone"  placeholder="###-###-###" required/>
         </div>
-
         <div className="input-container">
           <label>
             Email
           </label>
-          <input type="text" name="email" placeholder="john.doe@email.com"/>
+          <input id="email" type="email" name="email" placeholder="john.doe@email.com" required/>
         </div>
         <input type="submit" value="Register!" className="btn-register"/>
       </form>
