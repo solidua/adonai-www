@@ -1,0 +1,34 @@
+application: adonai-www
+version: 20170729
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: webapp2
+  version: latest
+
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /favicon.ico
+  static_files: webapp/build/favicon.ico
+  upload: webapp/build/favicon.ico
+- url: /static/css
+  static_dir: webapp/build/static/css/
+  expiration: "14d"
+
+- url: /static/js
+  static_dir: webapp/build/static/js
+  expiration: "14d"
+
+- url: /.*
+  script: main.application
+  secure: always 
+
+
+skip_files:
+- ^(.*.pyc)
+- ^(.git.*)
+- ^(webapp/node_modules/.*)

@@ -1,0 +1,201 @@
+.container {
+  width: 100%;
+  color: #333333;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+.App {
+  max-width: 900px;
+  padding: 0px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-size: 60px;
+  margin: 0;
+}
+
+h2 {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 40px;
+}
+
+h3 {
+  font-style: italic;
+  color: #ABABAF;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: .5px;
+}
+
+button, input[type="submit" i] {
+  font-size: 30px;
+  padding: 25px 90px;
+  border: none;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0, .10);
+  color: #ABABAF;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-register {
+  margin-top: 30px;
+  color: white !important;
+  background-color: #FC7788 !important;
+}
+
+.menu-container {
+    text-align: right;
+    padding: 28px;
+    padding-bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    letter-spacing: 1px;
+}
+
+.menu-container > span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.banner-container {
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+}
+
+.bottom-container {
+  height: 100vh;
+}
+
+.about-container {
+  text-align: left;  
+  margin-bottom: 80px;
+}
+
+.about-container > h2 {
+  margin-bottom: 30px;
+}
+
+.donate-container {
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.donate-container > h1 {
+  font-size: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+
+.donate-container > h1 > span {
+  font-weight: normal;
+}
+
+.donate-container > .progress-container {
+  height: 5px;
+  width: 100%;
+  background-color: #E6E7E8;
+  border: none;
+  border-radius: 8px;
+}
+
+.donate-container > .progress-container > .progress-bar {
+  height: 100%;
+  width: 10%;
+  background-color: #FC7788;
+  border: none;
+  border-radius: 8px;
+}
+
+.donate-container > h2 {
+  font-size: 15px;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  sfont-weight: normal;
+}
+
+.registration-container {
+  margin-bottom: 100px;
+}
+
+form {
+  margin-bottom: 40px
+}
+
+.input-container {
+  margin: 15px auto;
+  max-width: 350px;
+}
+
+.input-container > label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.input-container > input {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px;
+  background-color: #F7F7F7;
+  border-style: none;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder { 
+  color: #ABABAF;
+}
+::-moz-placeholder { 
+  color: #ABABAF;
+}
+:-ms-input-placeholder { 
+  color: #ABABAF;
+}
+:-moz-placeholder { 
+  color: #ABABAF;
+}
+
+@media screen and (min-width: 300px) { 
+
+}
+
+@media screen and (min-width: 600px) { 
+  h1 {
+    font-size: 100px;
+  }
+
+  .about-container {
+    text-align: left;  
+    margin-bottom: 80px;
+  }
+
+  .registration-container {
+    margin-bottom: 100px;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 144px;
+  }
+}
+
+
