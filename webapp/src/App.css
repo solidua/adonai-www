@@ -1,3 +1,7 @@
+.box, .wave, .banner-container {
+  overflow: hidden !important;
+}
+
 .container {
   width: 100%;
   color: #333333;
@@ -171,6 +175,8 @@ form {
 :-moz-placeholder { 
   color: #ABABAF;
 }
+
+
 
 @media screen and (min-width: 300px) { 
 
